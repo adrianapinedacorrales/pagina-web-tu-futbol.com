@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tufutbolCol</title>
+    <script src="js/alertify.js"></script>
+    <link rel="stylesheet" href="js/css/alertify.rtl.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-3">
+            <div class="container">
+    
+            </div>
+    
+    
+        </div>
+        <div class="col-6">
+            <div id="tablas">
+                <h3 class="text-center text-info" >Usuarios</h3>
+                <form v-on:submit.prevent="guardarUsuario">
+                <div class="text-center">
+                    <table>
+                    <tr>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <td><span class="input-group-text" id="">Documento</span></td>
+                            </div>
+                           <td> <input type="text" v-model="documento" ></td>
+                        </div>
+                        
+                    </tr>
+                    <tr>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <td><span class="input-group-text" id="">Nombres</span></td>
+                            </div>
+                            <td><input type="text" v-model="nombre" ></td>
+                        </div>
+                       
+                    </tr>
+                   
+                    <tr>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <td><span class="input-group-text" id="">Correo</span></td>
+                            </div>
+                           <td> <input type="text" v-model="correo" ></td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <td><span class="input-group-text" id="">Telefono</span></td>
+                            </div>
+                           <td > <input type="text" v-model="telefono" ></td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                              <td><span class="input-group-text" id="">Contraseña</span></td>
+                            </div>
+                            <td><input type="text" v-model="contrasena" ></td>
+                        </div>
+                </tr>
+                </table>
+            </div>
+                <p class="text-center"><input class="btn btn-primary" type="submit"  value="Guardar Usuario"  ><input class="btn btn-success"  type="button" value="Consultar Usuarios" v-on:click="consultarUsuarios"></p>
+                <!-- <p class="text-center"><input class="btn btn-primary" type="button"  value="consultar usuario"  ></p> -->
+                
+
+                <!-- <a class="nav-link" v-on:click="menu=1">Usuarios</a> -->
+            </form>
+            </div>
+    
+           
+        </div>
+        <div class="col-3">
+    
+        </div>
+    
+    </div>
+</body>
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Conéctate con nosotros en las redes sociales :</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <font-awesome-icon icon="fab fa-facebook-f" />
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+  
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+  
+  
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright: joset
+      <a class="text-reset fw-bold" href="#">tufutbolCol.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="js/app.js"></script>
+
+
+
+</html>
